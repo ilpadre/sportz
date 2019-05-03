@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
+using sportz;
 using sportz.Models;
 
 namespace SportzTests
@@ -20,6 +22,13 @@ namespace SportzTests
     public void Test1()
     {
       Assert.Pass();
+    }
+
+    [Test]
+    public void ShouldComputeWinLossForBrewers()
+    {
+      var result = WinLoss.CalculateWinLossPercentage(teams.First(t => t.TeamName == "Brewers"));
+      Assert.AreEqual(0, result);
     }
   }
 }
