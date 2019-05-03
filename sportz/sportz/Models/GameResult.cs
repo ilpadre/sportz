@@ -9,6 +9,5 @@ namespace sportz.Models
     int HomeScore { get; set; }
     string VisitingTeam { get; set; }
     int VisitingScore { get; set; }
-
   }
 }
