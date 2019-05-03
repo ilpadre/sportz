@@ -4,10 +4,10 @@ namespace sportz.Models
 {
   public class GameResult
   {
-    DateTime Date { get; set; }
-    string HomeTeam { get; set; }
-    int HomeScore { get; set; }
-    string VisitingTeam { get; set; }
-    int VisitingScore { get; set; }
+    public DateTime Date { get; set; }
+    public string HomeTeam { get; set; }
+    public int HomeScore { get; set; }
+    public string VisitingTeam { get; set; }
+    public int VisitingScore { get; set; }
   }
 }
