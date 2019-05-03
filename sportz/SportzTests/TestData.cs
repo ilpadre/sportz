@@ -4,9 +4,25 @@ using System.Collections.Generic;
 
 namespace SportzTests
 {
-  public class TestData
+  public static class TestData
   {
-    public List<GameResult> GetGameResults()
+    public static List<Team> GetTeams()
+    {
+      return new List<Team>
+      {
+        new Team("East", "Narwhals"),
+        new Team("East", "Zebras"),
+        new Team("West", "Brewers"),
+        new Team("West", "Scooters"),
+        new Team("East", "Aardvarks"),
+        new Team("East", "Ligers"),
+        new Team("West", "Defenestrators"),
+        new Team("West", "")
+      };
+    }
+
+
+    public static List<GameResult> GetGameResults()
     {
       return new List<GameResult> {
         new GameResult {
@@ -17,14 +33,22 @@ namespace SportzTests
           VisitingScore = 8
         },
 
-        new GameResult
-        {
+        new GameResult {
           Date = new DateTime(2018, 03, 14),
           HomeTeam = "Brewers",
           HomeScore = 1,
           VisitingTeam = "Scooters",
           VisitingScore = 77
+        },
+
+        new GameResult {
+          Date = new DateTime(2018, 03, 27),
+          HomeTeam = "Aardvarks",
+          HomeScore = 23,
+          VisitingTeam = "Ligers",
+          VisitingScore = 13
         }
+
       };
     }
   }
