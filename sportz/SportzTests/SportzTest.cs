@@ -1,12 +1,19 @@
+using System.Collections.Generic;
 using NUnit.Framework;
+using sportz.Models;
 
-namespace Tests
+namespace SportzTests
 {
   public class Tests
   {
+    private List<Team> teams = null;
+    private List<GameResult> games = null;
+
     [SetUp]
     public void Setup()
     {
+        teams = TestData.GetTeams();
+        games = TestData.GetGameResults();
     }
 
     [Test]

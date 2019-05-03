@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using sportz.Models;
 
 namespace sportz
 {
@@ -11,5 +9,4 @@ namespace sportz
       Console.WriteLine("Hello World!");
     }
   }
-
 }
